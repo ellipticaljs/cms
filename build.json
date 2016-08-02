@@ -1,0 +1,7 @@
+[
+  "./lib/pageTemplate.js",
+  "./lib/pageLocalProvider.js",
+  "./lib/pageRestProvider.js",
+  "./lib/pageService.js",
+  "./lib/pageController.js"
+]

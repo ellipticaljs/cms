@@ -1,0 +1,32 @@
+{
+  "name": "elliptical-cms",
+  "description": "Client content management service layer",
+  "version": "1.0.0",
+  "author": "S. Francis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ellipticaljs/elliptical-cms.git"
+  },
+  "dependencies": {
+    "elliptical-utils": "git+https://github.com/ellipticaljs/utils.git",
+    "elliptical-service": "git+https://github.com/ellipticaljs/service.git",
+    "elliptical-soa": "git+https://github.com/ellipticaljs/soa.git",
+    "elliptical-repository-provider": "git+https://github.com/ellipticaljs/repository-provider.git",
+    "elliptical-rest-provider": "git+https://github.com/ellipticaljs/rest-provider.git",
+    "elliptical-controller": "git+https://github.com/ellipticaljs/controller.git",
+    "moment-import": "git+https://github.com/ellipticaljs/moment-import.git"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-umd": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-3": "^6.5.0",
+    "fs-extra": "^0.8.1",
+    "gulp": "^3.8.7",
+    "gulp-concat": "^2.2.0",
+    "gulp-tap": "^0.1.1",
+    "gulp-uglify": "^0.2.1",
+    "gulp-util": "^2.2.14",
+    "gulp-babel": "^6.1.2"
+  }
+}
