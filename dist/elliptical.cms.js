@@ -557,6 +557,11 @@
     }
 
     _createClass(PageService, null, [{
+      key: 'toId',
+      value: function toId(title) {
+        return title.replace(/ /g,'-').toLowerCase();
+      }
+    },{
       key: 'verify',
       value: function verify(params, callback) {
         var $provider = this.$provider;
