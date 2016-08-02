@@ -316,7 +316,7 @@
         var keys = Object.keys(filter);
         filter = filter[keys[0]];
         filter = filter.toLowerCase();
-        var result = this.Enumerable().Where(function (x) {
+        var result = this.enumerable().Where(function (x) {
           return x.title.toLowerCase().indexOf(filter) == 0;
         });
         return result.ToArray();
@@ -327,7 +327,7 @@
         if (params.id.length < 2) {
           if (callback) callback({ statusCode: 400, message: 'invalid id length' }, null);
         } else {
-          var result = this.Enumerable().Where(function (x) {
+          var result = this.enumerable().Where(function (x) {
             return x.id.toLowerCase() == params.id.toLowerCase();
           });
           result = result.ToArray();
