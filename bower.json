@@ -1,7 +1,7 @@
 {
   "name": "elliptical-cms",
   "description": "Client content management service layer",
-  "version":"1.0.0",
+  "version":"1.0.1",
   "main": "",
   "authors": [
     "S. Francis"
