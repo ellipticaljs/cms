@@ -73,7 +73,7 @@
       this._init();
     }
 
-    _createClass(PageTemplate, null, [{
+    _createClass(PageTemplate, [{
       key: 'get',
       value: function get() {
         return this._data;
@@ -130,7 +130,7 @@
     }, {
       key: '_templateArticleSimple',
       value: function _templateArticleSimple() {
-        var imageRoot = PageTemplate["@imageRoot"];
+        var imageRoot = this.constructor["@imageRoot"];
         var template = {
           id: 'article-simple',
           name: 'Simple article',
@@ -148,7 +148,7 @@
     }, {
       key: '_templateArticleImage',
       value: function _templateArticleImage() {
-        var imageRoot = PageTemplate["@imageRoot"];
+        var imageRoot = this.constructor["@imageRoot"];
         var template = {
           id: 'article-image',
           name: 'Two column article with image',
@@ -176,7 +176,7 @@
     }, {
       key: '_setTemplateImage',
       value: function _setTemplateImage(template) {
-        var imageRoot = PageTemplate["@imageRoot"];
+        var imageRoot = this.constructor["@imageRoot"];
         if (string.firstChar(template.image) !== '/') {
           template.image = imageRoot + '/' + template.image;
         }
@@ -559,9 +559,9 @@
     _createClass(PageService, null, [{
       key: 'toId',
       value: function toId(title) {
-        return title.replace(/ /g,'-').toLowerCase();
+        return title.replace(/ /g, '-');
       }
-    },{
+    }, {
       key: 'verify',
       value: function verify(params, callback) {
         var $provider = this.$provider;
