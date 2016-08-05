@@ -1,12 +1,12 @@
 {
-  "name": "elliptical-cms",
+  "name": "elliptical-page",
   "description": "Client content management service layer",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ellipticaljs/elliptical-cms.git"
+    "url": "https://github.com/ellipticaljs/elliptical-page.git"
   },
   "dependencies": {
     "elliptical-utils": "git+https://github.com/ellipticaljs/utils.git",

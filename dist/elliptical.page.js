@@ -201,7 +201,7 @@
     var mod = {
       exports: {}
     };
-    factory(mod.exports, global.elliptical, global.elliptical.RepositoryProvider, global.momentImport);
+    factory(mod.exports, global.elliptical, global.elliptical.RepositoryProvider, global.moment);
     global.elliptical.PageLocalProvider = mod.exports.default;
   }
 })(this, function (exports, _ellipticalSoa, _ellipticalRepositoryProvider, _momentImport) {
@@ -758,8 +758,8 @@
 
                 case 4:
                   page = _context.sent;
-                  context = { content: page.content };
-                  template = this.templateRoot + id;
+                  context = { content: page.content, title: page.title, cssClass: page.cssClass, id: page.id };
+                  template = this.templateRoot + page.template;
 
                   res.render(context, template);
                   _context.next = 13;

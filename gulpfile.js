@@ -1,9 +1,9 @@
 var gulp=require('gulp'),
     concat=require('gulp-concat'),
     BUILD_JSON=require('./build.json'),
-    BUILD_NAME='elliptical.cms.js',
+    BUILD_NAME='elliptical.page.js',
     babel=require('gulp-babel'),
-    REPO_NAME='elliptical-cms',
+    REPO_NAME='elliptical-page',
     DIST='./dist';
 
 
