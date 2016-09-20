@@ -2,6 +2,9 @@
   "./lib/pageTemplate.js",
   "./lib/pageLocalProvider.js",
   "./lib/pageRestProvider.js",
+  "./lib/pageCategoryLocalProvider.js",
+  "./lib/pageCategoryRestProvider.js",
+  "./lib/pageCategoryService.js",
   "./lib/pageService.js",
   "./lib/pageController.js"
 ]
