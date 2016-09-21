@@ -952,7 +952,7 @@
         this.get({ isPublished: true, showInMenu: true, isContentPage:true }, function (err, pages) {
           pageCategory.orderBy('order').get({}, function (e, categories) {
             categories.forEach(function (obj) {
-              obj.pages = self._getMenuItems(pages, obj.category);
+              obj.pages = self._getMenuItems(pages, obj.id);
               menu.push(obj);
             });
             if(callback) callback(null, menu);
