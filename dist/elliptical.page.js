@@ -1150,7 +1150,7 @@
       key: 'replaceCategory',
       value: function replaceCategory(params, callback) {
         var $provider = this.$provider;
-        var resource = this['@updateResource'];
+        var resource = this['@replaceResource'];
         $provider.replaceCategory(params, resource, callback);
       }
     }, {
