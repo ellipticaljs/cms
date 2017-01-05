@@ -1095,7 +1095,7 @@
       value: function saveSettings(params, callback) {
         var self = this;
         if(params.category==='') params.category=null;
-        this.get(params, {}, function (err, page) {
+        this.get({id:params.id}, {}, function (err, page) {
           if (err) callback(err, null);else {
             page.isPublished = (params.isPublished === 'true' || params.isPublished===true);
             page.showInMenu = (params.showInMenu === 'true' || params.showInMenu===true);
@@ -1119,7 +1119,7 @@
               switch (_context5.prev = _context5.next) {
                 case 0:
                   _context5.next = 2;
-                  return this.getAsync(params);
+                  return this.getAsync({id:params.id});
 
                 case 2:
                   page = _context5.sent;
