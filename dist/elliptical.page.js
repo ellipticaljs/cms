@@ -1043,9 +1043,11 @@
             var pageTemplate = new _pageTemplate2.default();
             var data = self._getClone(page);
             var template = pageTemplate.getById(data.template);
-            data.cssClassOptions = template.cssClassOptions;
-            data.cssOptionsLength = template.cssClassOptions.length;
-            data.templates = pageTemplate.getTemplateIds();
+            if(template){
+              data.cssClassOptions = template.cssClassOptions;
+              data.cssOptionsLength = template.cssClassOptions.length;
+              data.templates = pageTemplate.getTemplateIds();
+            }
             data.categories = [];
             _pageCategoryService2.default.get({}, {}, function (e, result) {
               if (!e) data.categories = result;
