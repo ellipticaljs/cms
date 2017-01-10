@@ -69,25 +69,25 @@
     function PageTemplate() {
       _classCallCheck(this, PageTemplate);
 
-      this._data = [];
-      this._init();
+      this.constructor._data = [];
+
     }
 
     _createClass(PageTemplate, [{
       key: 'get',
       value: function get() {
-        return this._data;
+        return this.constructor._data;
       }
     }, {
       key: 'getById',
       value: function getById(id) {
-        var data = this._data;
+        var data = this.constructor._data;
         return array.findById(data, id);
       }
     }, {
       key: 'getTemplateIds',
       value: function getTemplateIds() {
-        var data = this._data;
+        var data = this.constructor._data;
         return data.map(function (obj) {
           return obj.id;
         });
@@ -96,7 +96,7 @@
       key: 'add',
       value: function add(template) {
         template = this._setTemplateImage(template);
-        this._data.push(template);
+        this.constructor._data.push(template);
       }
     }, {
       key: 'addArray',
@@ -116,9 +116,9 @@
     }, {
       key: 'remove',
       value: function remove(id) {
-        var data = this._data;
+        var data = this.constructor._data;
         var index = array.indexById(data, id);
-        this._data.splice(index, 1);
+        this.constructor._data.splice(index, 1);
       }
     }, {
       key: 'removeArray',
@@ -151,7 +151,7 @@
           }
         };
 
-        this._data.push(template);
+        this.constructor._data.push(template);
       }
     }, {
       key: '_templateArticleImage',
@@ -170,7 +170,7 @@
           }
         };
 
-        this._data.push(template);
+        this.constructor._data.push(template);
       }
     }, {
       key: '_replace',
